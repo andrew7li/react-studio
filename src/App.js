@@ -38,7 +38,7 @@ function App() {
           {cart.map((ele, idx) => {
             if (ele > 0) {
               return (
-                <div className="CartItem">
+                <div className="CartItem" key={idx}>
                   {ele}x {bakeryData[idx].name}
                 </div>
               );
