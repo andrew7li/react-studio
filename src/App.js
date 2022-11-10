@@ -34,8 +34,7 @@ function App() {
         </div>
         <div className="CartContainer">
           <h1>Cart</h1>
-          Total: {formatTotal(total)}
-          {console.log(cart)}
+          <strong>Total: {formatTotal(total)}</strong>
           {cart.map((ele, idx) => {
             if (ele > 0) {
               return (
@@ -44,6 +43,7 @@ function App() {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
