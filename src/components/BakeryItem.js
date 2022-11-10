@@ -3,14 +3,11 @@ import React from "react";
 export default function BakeryItem(props) {
   function handleClick() {
     props.setTotal(props.total + props.item.price);
-    props.setCart(
-      props.cart.map((item, index) => {
-        if (index === props.index) {
-          return item + 1;
-        }
-        return item;
-      })
-    );
+    props.setCart((prevCart) => {
+      let newCart = [...prevCart];
+      newCart[props.index] += 1;
+      return newCart;
+    });
   }
 
   return (

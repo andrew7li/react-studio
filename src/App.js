@@ -24,7 +24,6 @@ function App() {
           {bakeryData.map((item, index) => (
             <BakeryItem
               item={item}
-              cart={cart}
               setCart={setCart}
               total={total}
               setTotal={setTotal}
