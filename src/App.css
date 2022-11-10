@@ -1,9 +1,85 @@
 /* Add styling for your page here */
 
 .App {
+  padding: 0 3rem;
+  text-align: center;
+}
 
+.AppHeader {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.AppContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.BakeryItemContainer {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .BakeryItem {
-  
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BakeryTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  background-color: #ebebeb;
+}
+
+.BakeryItem img {
+  width: 100%;
+}
+
+.BakeryPriceCart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BakeryPriceCart button {
+  height: 3rem;
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.BakeryPriceCart button:hover {
+  background-color: #cab273;
+}
+
+.CartContainer {
+  grid-column: 5;
+}
+
+.CartContainer h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
 }
